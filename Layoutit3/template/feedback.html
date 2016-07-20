@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>新文本</title>
+<meta name="Author" content=""/>
+<meta name="Keywords" content=""/>
+<meta name="Description" content=""/>
+</head>
+<body>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">保存</h4>
+      </div>
+      <div class="modal-body">
+				<form method="post" action="post:www.123.com" name="sendFeedback" id="sendFeedback">
+				<fieldset>
+				<label>邮箱账号：</label>
+				<input type="text" id="feedback_email" class="text" name="feedback[email]">	
+				<label>反馈问题描述:</label>
+				<textarea id="feedback_message" class="text" name="feedback[message]" cols="30" rows="4"></textarea>								
+				<input type="hidden" id="feedback_id_feedback" name="feedback[id_feedback]">				</fieldset>
+				</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">提交</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</body>
+</html>
